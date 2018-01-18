@@ -677,7 +677,9 @@ defaults.parser = function (code, options) {
 
             code = key + '(' + split.join(',') + ');';
             break;
-
+        case 'var':
+            code = 'var ' + args + ';';
+            break;
         default:
 
             // 过滤器（辅助方法）
