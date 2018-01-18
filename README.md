@@ -2,6 +2,22 @@
 
 新一代 javascript 模板引擎
 
+### update: v3.1.1
+由于要支持IE8以下, 所以在原仓库 3.1.0 分支的基础上继续维护. 加入在模板中使用 var 声明变量的功能, 如:
+
+	{{var list = Data.Details.list;}}
+	{{eash list as item}}
+	{{item.name}}
+	{{/each}}
+	{{if list.length > 10}}
+	太多了
+	{{/if}}
+
+感谢原作者, 我只加了几十个字节的代码就实现了 var 功能.
+
+---------- 以下是原 Readme ----------
+
+
 > 后会无期。2016-12-22
 
 ##      	目录
